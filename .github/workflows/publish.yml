@@ -10,17 +10,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  publish:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Checkout the Source Code
-        uses: actions/checkout@v2
-        
+    steps:      
       - name: Publish Module to PowerShell Gallery
         uses: pcgeek86/publish-powershell-module-action@v19
         with:
-          modulePath: src
+          modulePath: GitHubModuleInstaller
           NuGetApiKey: ${{ secrets.PS_GALLERY_KEY }}

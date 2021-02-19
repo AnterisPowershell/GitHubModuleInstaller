@@ -15,7 +15,10 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:      
+    steps:
+      - name: Checkout the Source Code
+        uses: actions/checkout@v2
+        
       - name: Publish Module to PowerShell Gallery
         uses: pcgeek86/publish-powershell-module-action@v19
         with:

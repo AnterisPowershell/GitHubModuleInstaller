@@ -66,7 +66,7 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://github.com/AnterisPowershell/GitHubModule'
+        ProjectUri = 'https://github.com/AnterisPowershell/GitHubModuleInstaller'
 
         # A URL to an icon representing this module.
         # IconUri = ''
